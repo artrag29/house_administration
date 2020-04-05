@@ -1,0 +1,7 @@
+house_administration.house_add:
+  route_name: house_administration.house_add
+  title: 'Add house'
+
+  appears_on:
+    - entity.house_administration.collection
+    - entity.house_administration.canonical

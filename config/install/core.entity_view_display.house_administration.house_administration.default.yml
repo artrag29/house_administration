@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - house_administration
+    - options
+id: house_administration.house_administration.default
+targetEntityType: house_administration
+bundle: house_administration
+mode: default
+content:
+  address:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  attribute:
+    label: above
+    type: list_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  year:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_year
+    third_party_settings: {  }
+hidden: {  }

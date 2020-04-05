@@ -1,0 +1,5 @@
+name: House Administration Entity
+type: module
+description: House Administration content entity.
+package: custom
+core: 8.x

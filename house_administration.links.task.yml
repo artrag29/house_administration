@@ -1,0 +1,20 @@
+house_administration.settings_tab:
+  route_name: house_administration.house_administration_settings
+  title: Settings
+  base_route: house_administration.house_administration_settings
+
+house_administration.view:
+  route_name: entity.house_administration.canonical
+  base_route: entity.house_administration.canonical
+  title: View
+
+house_administration.page_edit:
+  route_name: entity.house_administration.edit_form
+  base_route: entity.house_administration.canonical
+  title: Edit
+
+house_administration.delete_confirm:
+  route_name:  entity.house_administration.delete_form
+  base_route:  entity.house_administration.canonical
+  title: Delete
+  weight: 10

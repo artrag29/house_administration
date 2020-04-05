@@ -1,0 +1,47 @@
+entity.house_administration.canonical:
+  path: '/house_administration/{house_administration}'
+  defaults:
+    _entity_view: 'house_administration'
+    _title: 'House content'
+  requirements:
+    _entity_access: 'house_administration.view'
+
+entity.house_administration.collection:
+  path: '/house_administration/list'
+  defaults:
+    _entity_list: 'house_administration'
+    _title: 'Houses list'
+  requirements:
+    _permission: 'view house administration entity'
+
+house_administration.house_add:
+  path: '/house_administration/add'
+  defaults:
+    _entity_form: house_administration.default
+    _title: 'Add house'
+  requirements:
+    _entity_create_access: 'house_administration'
+
+entity.house_administration.edit_form:
+  path: '/house_administration/{house_administration}/edit'
+  defaults:
+    _entity_form: house_administration.default
+    _title: 'Edit house'
+  requirements:
+    _entity_access: 'house_administration.update'
+
+entity.house_administration.delete_form:
+  path: '/house/{house_administration}/delete'
+  defaults:
+    _entity_form: house_administration.delete
+    _title: 'Delete house'
+  requirements:
+    _entity_access: 'house_administration.delete'
+
+house_administration.house_administration_settings:
+  path: '/admin/structure/house_administration_settings'
+  defaults:
+    _form: '\Drupal\house_administration\Form\HouseAdministrationSettingsForm'
+    _title: 'Contact settings'
+  requirements:
+    _permission: 'administer house administration entity'

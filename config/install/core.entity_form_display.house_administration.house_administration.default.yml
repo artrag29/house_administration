@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - house_administration
+id: house_administration.house_administration.default
+targetEntityType: house_administration
+bundle: house_administration
+mode: default
+content:
+  address:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  attribute:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  year:
+    type: datetime_datelist
+    weight: 2
+    region: content
+    settings:
+      date_order: YMD
+      time_type: '24'
+      increment: 15
+    third_party_settings: {  }
+hidden: {  }

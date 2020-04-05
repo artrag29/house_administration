@@ -1,0 +1,9 @@
+entity.house_administration.collection:
+  title: 'House administration Entity'
+  route_name: entity.house_administration.collection
+  description: 'List houses'
+house_administration.admin.structure.settings:
+  title: 'House administration settings'
+  description: 'Configure house administration entity'
+  route_name:  house_administration.house_administration_settings
+  parent: system.admin_structure
