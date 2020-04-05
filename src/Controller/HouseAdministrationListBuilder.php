@@ -59,6 +59,7 @@ class HouseAdministrationListBuilder extends EntityListBuilder {
    */
   protected function getEntityIds() {
     $query = $this->getStorage()->getQuery()
+      ->sort('attribute')
       ->sort('year', 'ASC');
 
     if ($this->limit) {
